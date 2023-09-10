@@ -1,0 +1,168 @@
+/* css boilerplate
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* understand css code
+1. html code
+    <p></p>
+    <p id="ad"></p>
+    <p class="bd"></p>
+2. targetting the elements
+    p{}: targetting a tag
+    #ad{}: targetting an id
+    .bd{}: targetting a class */
+
+/* understand height & width
+1. generally used to define the height & width of containers
+2. simply write height and width respectively and hit enter */
+
+/* understand units, px & %
+1. measuring tools in our code 
+2. defines the measurement or styling of respective elements */
+
+/* understand margin & padding 
+1. space spared between two respective containers 
+2. it is defined in a clockwise manner around the container/element/block
+3. margin: 20px 30px 40px 50px 
+4. margin: 12'o_clock 3'o_clock 6'o_clock 9'o_clock */
+
+#first{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* understand background image & things
+1. we can also link image in css
+2. there are many attributes/things to experiment with */
+
+#second{
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(https://images.unsplash.com/photo-1442570468985-f63ed5de9086?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1840&q=80);
+    background-position: center;
+}
+
+/* understand position absolute
+1. it brings the element on top of other elements
+2. imagine it in z-axis
+3. the later ones will position on the top */
+
+#third{
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+
+#car1{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: aqua;
+}
+
+#car2{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: bisque;
+}
+
+#car3{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+
+/* understand position relative
+1. it brings the element on top of other elements
+2. imagine it in z-axis
+3. the difference is it positions the "position: absolute" element in relative to the "position: relative" element
+4. to make it work you have to define "position: absolute" element inside the "position: relative" element in HTML file */
+
+/* uderstand top & left 
+1. used to position the absolute elements inside the relative elements
+2. does not work otherwise */
+
+#car4{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background-color: aquamarine;
+}
+
+#car5{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: blueviolet;
+}
+
+/* understand display flex
+1. used to make elements dynamic/free to move 
+2. usually we use it to structure the layout of elements indside a div */
+
+#main{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+}
+
+#box4{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+#box5{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+}
